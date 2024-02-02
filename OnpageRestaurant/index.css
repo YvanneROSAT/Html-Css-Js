@@ -92,6 +92,8 @@ a:hover {
 #textCardAndPrice {
     display: grid;
     grid-template-columns: 90% 10%;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .entrees, .plats, .Desert {
@@ -275,6 +277,10 @@ footer h2 {
     .titleHome {
         font-size: 70px;
     }
+
+    p{
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -297,6 +303,10 @@ footer h2 {
     .entrees, .plats, .Desert {
     margin: 0;
     }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -306,7 +316,53 @@ footer h2 {
         margin: 25px 100px;
     }
 
+    .contenaire-item p {
+        font-size: 1.5rem;
+    }
+
     footer h2 {
         font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .contenaire-item img {
+        display: none;
+    }
+
+    .item-services .contenaire-item-remove-img {
+        display: none;
+    }
+
+    .reverse {
+        flex-direction: row;
+    }
+
+    .contenaire-item {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .item-services {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer h2 {
+        font-size: 1.4rem;
+    }
+    
+    .contenaire-item {
+        height: 250px;
+        width: 300px;
+    }
+
+    .info-contact div p {
+        font-size: 1.4rem;
     }
 }
