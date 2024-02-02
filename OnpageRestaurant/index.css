@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html body {
     margin: 0;
     width: 100;
     color: white;
+    background-color: #FFF7F0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,6 +15,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li {
     font-family: 'Roboto', sans-serif;
+}
+
+li {
+    font-weight: 900;
 }
 
 /* nav */
@@ -41,7 +50,7 @@ li {
 }
 
 .logo {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 a {
@@ -50,8 +59,11 @@ a {
 }
 
 a:hover {
-    color: orange;
-    text-decoration: underline;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 30px;
 }
 
 /* Section head */
@@ -63,16 +75,28 @@ a:hover {
 }
 
 .head {
-    background-image: url(../Img/imgs_restaurant_onepage/pizza-2810589_1920.jpg);
+    position: relative;
     margin: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 700px;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.head::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../Img/imgs_restaurant_onepage/pizza-2810589_1920.jpg);
+    filter: brightness(60%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
 }
 
 .NousTrouver {
@@ -82,6 +106,16 @@ a:hover {
     border-radius: 40px;
     background-color: red;
     color: white;
+    border: solid white;
+    box-shadow: 3px 3px 15px white;
+}
+
+.NousTrouver:hover {
+    transition: all 0.3s ease;
+    background-color: white;
+    color: red;
+    border: solid red;
+    box-shadow: 3px 3px 15px red;
 }
 
 /* section notre carte */
@@ -92,12 +126,20 @@ a:hover {
 #textCardAndPrice {
     display: grid;
     grid-template-columns: 90% 10%;
-    margin-right: 25px;
-    margin-left: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .entrees, .plats, .Desert {
     margin: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.entrees:hover, .plats:hover, .Desert:hover {
+    transition: all 0.5s ease;
+    box-shadow: 10px 15px 15px red;
 }
 
 .entreesTitle, .desertsTitle, .platsTitle {
@@ -118,16 +160,20 @@ a:hover {
 }
 
 .ListeCarte {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
     color: black;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .ImgCard {
     width: 90%;
+    border-radius: 30px;
 }
 
 .card {
@@ -145,7 +191,7 @@ a:hover {
     padding-right: 250px;
     padding-left: 250px;
     gap: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 
 .service h1 {
@@ -166,6 +212,12 @@ a:hover {
 .contenaire-item img {
     width: 100%;
     height: 100%;
+    border-radius: 30px;
+}
+
+.contenaire-item img:hover {
+    transition: all 0.3s ease-in-out;
+    filter: brightness(50%);
 }
 
 .text-service {
@@ -175,6 +227,7 @@ a:hover {
     justify-content: center;
     padding: auto;
     text-align: center;
+    border-radius: 30px;
 }
 
 .contenaire-item {
@@ -200,7 +253,7 @@ a:hover {
 section h1 {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 }
 
 .info-contact div {
@@ -209,13 +262,16 @@ section h1 {
     margin-bottom: 30px;
 }
 
-.info-contact div p {
+.contact p {
     font-size: 2rem;
-    text-align: center;
 }
 
 .info-contact img {
     width: 25%;
+}
+
+.carte iframe {
+    border-radius: 30px;
 }
 
 /* Footer */
@@ -242,6 +298,8 @@ footer h2 {
     .nav-bar .logo {
         position: absolute;
         left: 50px;
+        color: red;
+        font-size: 2rem;
     }
 
     .nav-bar .menu-hamburger {
@@ -350,6 +408,14 @@ footer h2 {
         justify-content: center;
         align-items: center;
     }
+
+    .contact iframe {
+        max-width: 80vw;
+    }
+
+    .nav-bar .menu-hamburger {
+        right: 30px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -364,5 +430,9 @@ footer h2 {
 
     .info-contact div p {
         font-size: 1.4rem;
+    }
+
+    .contact iframe {
+        max-width: 90vw;
     }
 }
