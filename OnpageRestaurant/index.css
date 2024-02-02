@@ -1,12 +1,7 @@
 html body {
     margin: 0;
-    width: 100%;
+    width: 100;
     color: white;
-}
-
-#margeCote {
-    margin-right: 50px;
-    margin-left: 50px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -47,6 +42,16 @@ li {
 
 .logo {
     font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
 }
 
 /* Section head */
@@ -115,6 +120,8 @@ li {
     text-align: center;
     font-size: 2rem;
     font-weight: normal;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .ImgCard {
@@ -123,8 +130,9 @@ li {
 
 .card {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
 }
 
 /* Section Service */
@@ -266,5 +274,39 @@ footer h2 {
 
     .titleHome {
         font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact iframe {
+        max-width: 60vw;
+    }
+
+    .service {
+        padding: 30px;
+    }
+
+    .entrees, .plats, .Desert {
+    margin: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .NousTrouver {
+        font-size: 1em;
+        padding: 15px 15px;
+        margin: 25px 100px;
+    }
+
+    footer h2 {
+        font-size: 2rem;
     }
 }

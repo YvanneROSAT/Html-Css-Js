@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,16 @@
     <link rel="stylesheet" href="index.css">
     <title>Restaurant landing page</title>
 </head>
+
 <body>
     <!-- Nav -->
     <nav class="nav-bar">
         <h1 class="logo">San Pietro</h1>
         <ul class="nav-link">
             <li><a href="../">Accueil</a></li>
-            <li>Carte</li>
-            <li>Service</li>
-            <li>Contact</li>
+            <li><a href="#carte-encre">Carte</a></li>
+            <li><a href="#service-encre">Service</a></li>
+            <li><a href="#contact-encre">Contact</a></li>
         </ul>
         <img src="../Img/imgs_restaurant_onepage/icon/more.png" alt="menu hamburger" class="menu-hamburger">
     </nav>
@@ -32,7 +34,7 @@
     <!-- End section head -->
 
     <!-- section notre carte -->
-    <section class="ListeCarte" id="margeCote">
+    <section class="ListeCarte" id="carte-encre">
         <h1 id="TitleVert">Notre Carte</h1>
         <div class="card">
             <div class="entrees">
@@ -44,43 +46,44 @@
                         <p>Bruschetta italienne</p>
                         <p>Antipasto a l'italienne</p>
                     </div>
-                <div class="Price">
-                    <p>8€</p>
-                    <p>9€</p>
-                    <p>10€</p>
+                    <div class="Price">
+                        <p>8€</p>
+                        <p>9€</p>
+                        <p>10€</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="plats">
-            <h2 id="TitleVert" class="platsTitle">Plats</h2>
-            <img src="../Img/imgs_restaurant_onepage/osso-buco-2535546_1920.jpg" class="ImgCard" alt="">
-            <div id="textCardAndPrice">
-                <div class="TitleProduct">
-                    <p>Pizza Napolitaine</p>
-                    <p>Osso Bucco</p>
-                    <p>Escalope Milanaise</p>
+            <div class="plats">
+                <h2 id="TitleVert" class="platsTitle">Plats</h2>
+                <img src="../Img/imgs_restaurant_onepage/osso-buco-2535546_1920.jpg" class="ImgCard" alt="">
+                <div id="textCardAndPrice">
+                    <div class="TitleProduct">
+                        <p>Pizza Napolitaine</p>
+                        <p>Osso Bucco</p>
+                        <p>Escalope Milanaise</p>
+                    </div>
+                    <div class="Price">
+                        <p>12€</p>
+                        <p>14€</p>
+                        <p>16€</p>
+                    </div>
                 </div>
-            <div class="Price">
-                <p>12€</p>
-                <p>14€</p>
-                <p>16€</p>
             </div>
-            </div>
-        </div>
-        <div class="Desert">
-            <h2 id="TitleVert" class="desertsTitle">Desserts</h2>
-            <img src="../Img/imgs_restaurant_onepage/tiramisu-4098241_1920.jpg" class="ImgCard" alt="">
-            <div id="textCardAndPrice">
-                <div class="TitleProduct">
-                    <p>Pana Cotta</p>
-                    <p>Tiramisu</p>
-                    <p>zuccotto</p>
+            <div class="Desert">
+                <h2 id="TitleVert" class="desertsTitle">Desserts</h2>
+                <img src="../Img/imgs_restaurant_onepage/tiramisu-4098241_1920.jpg" class="ImgCard" alt="">
+                <div id="textCardAndPrice">
+                    <div class="TitleProduct">
+                        <p>Pana Cotta</p>
+                        <p>Tiramisu</p>
+                        <p>zuccotto</p>
+                    </div>
+                    <div class="Price">
+                        <p>6€</p>
+                        <p>8€</p>
+                        <p>10€</p>
+                    </div>
                 </div>
-            <div class="Price">
-                <p>6€</p>
-                <p>8€</p>
-                <p>10€</p>
-            </div>
             </div>
         </div>
         </div>
@@ -88,7 +91,7 @@
     <!-- End section notre carte -->
 
     <!-- Section Service -->
-    <section class="service">
+    <section class="service" id="service-encre">
         <h1>Nos Services</h1>
         <div class="item-services">
             <div class="contenaire-item">
@@ -118,7 +121,7 @@
     <!-- End section service -->
 
     <!-- Section nous contacter -->
-    <section>
+    <section id="contact-encre">
         <div>
             <h1 id="TitleVert">Nous Contacter</h1>
         </div>
@@ -138,7 +141,10 @@
                 </div>
             </div>
             <div class="carte">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18844.938727008994!2d11.855086622052017!3d45.40294881282777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda460e313aeb%3A0xa60705e7bdb89aff!2sVia%20S.%20Pietro%2C%2095%2C%2035139%20Padova%20PD%2C%20Italie!5e0!3m2!1sfr!2sfr!4v1706805126509!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18844.938727008994!2d11.855086622052017!3d45.40294881282777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda460e313aeb%3A0xa60705e7bdb89aff!2sVia%20S.%20Pietro%2C%2095%2C%2035139%20Padova%20PD%2C%20Italie!5e0!3m2!1sfr!2sfr!4v1706805126509!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -155,8 +161,9 @@
     const menuHamburger = document.querySelector(".menu-hamburger")
     const navLink = document.querySelector(".nav-link")
 
-    menuHamburger.addEventListener('click', ()=>(
+    menuHamburger.addEventListener('click', () => (
         navLink.classList.toggle('mobile-menu')
     ))
 </script>
+
 </html>
