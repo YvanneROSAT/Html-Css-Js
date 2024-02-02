@@ -360,6 +360,7 @@ footer h2 {
 
     .entrees, .plats, .Desert {
     margin: 0;
+    margin-bottom: 40px;
     }
 
     p {
@@ -416,6 +417,11 @@ footer h2 {
     .nav-bar .menu-hamburger {
         right: 30px;
     }
+
+    .contact {
+    padding-right: 60px;
+    padding-left: 60px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -434,5 +440,10 @@ footer h2 {
 
     .contact iframe {
         max-width: 90vw;
+    }
+
+    .contact {
+        padding-right: 40px;
+        padding-left: 40px;
     }
 }
