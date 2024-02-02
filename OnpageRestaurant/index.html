@@ -12,14 +12,15 @@
 </head>
 <body>
     <!-- Nav -->
-    <nav>
+    <nav class="nav-bar">
         <h1 class="logo">San Pietro</h1>
-        <ul>
+        <ul class="nav-link">
             <li><a href="../">Accueil</a></li>
             <li>Carte</li>
             <li>Service</li>
             <li>Contact</li>
         </ul>
+        <img src="../Img/imgs_restaurant_onepage/icon/more.png" alt="menu hamburger" class="menu-hamburger">
     </nav>
     <!-- end nav -->
 
@@ -149,4 +150,13 @@
     </footer>
     <!-- End Footer -->
 </body>
+<!-- script button menu -->
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLink = document.querySelector(".nav-link")
+
+    menuHamburger.addEventListener('click', ()=>(
+        navLink.classList.toggle('mobile-menu')
+    ))
+</script>
 </html>
